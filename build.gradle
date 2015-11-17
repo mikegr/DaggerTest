@@ -10,6 +10,9 @@ buildscript {
 
 
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "Main"
 
 def generatedSources = "$buildDir/generated/src"
 def generatedOutputDir = file("$generatedSources")
