@@ -6,5 +6,5 @@ import dagger.Component;
 @Component(dependencies = EnvComp.class, modules = ActMod.class)
 @ActScope
 public interface  ActComp {
-
+    void inject(Main main);
 }

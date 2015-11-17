@@ -1,4 +1,5 @@
 import dagger.Module;
+import dagger.Provides;
 
 /**
  * Created by Michael Greifeneder on 17.11.15.
@@ -11,4 +12,16 @@ public class EnvMod {
 
         this.env = env;
     }
+    @Provides
+    @EnvScope
+    Env provideEnv() {
+        return env;
+    }
+
+    @Provides
+    @EnvScope
+    EnvDependency provideEnvDependency(AppDependency appDependency) {
+        return new EnvDependency(appDependency);
+    }
+
 }

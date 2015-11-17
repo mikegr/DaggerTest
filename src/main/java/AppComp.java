@@ -8,4 +8,7 @@ import dagger.Component;
 public interface AppComp {
 
     EnvComp getEnvComp(EnvMod envMod);
+
+    EnvProvider getEnvProvider();
+
 }

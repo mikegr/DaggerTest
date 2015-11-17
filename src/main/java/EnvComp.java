@@ -7,4 +7,6 @@ import dagger.Subcomponent;
 @EnvScope
 @Subcomponent(modules = EnvMod.class)
 public interface EnvComp {
+    Env getEnv();
+    EnvDependency getEnvDependency();
 }

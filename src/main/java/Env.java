@@ -8,4 +8,8 @@ public class Env {
 
         this.name = s;
     }
+
+    public String getName() {
+        return name;
+    }
 }
